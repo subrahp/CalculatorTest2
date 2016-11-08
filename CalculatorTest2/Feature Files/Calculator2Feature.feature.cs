@@ -10,27 +10,27 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace CalculatorTest2
+namespace CalculatorTest2.FeatureFiles
 {
     using TechTalk.SpecFlow;
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("CalSpecFeature2", Description="Add two numbers", SourceFile="CalcSecondFeature.feature", SourceLine=0)]
-    public partial class CalSpecFeature2Feature
+    [TechTalk.SpecRun.FeatureAttribute("CalSpecFeature", Description="Add two numbers", SourceFile="Feature Files\\Calculator2Feature.feature", SourceLine=0)]
+    public partial class CalSpecFeatureFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "CalcSecondFeature.feature"
+#line 1 "Calculator2Feature.feature"
 #line hidden
         
         [TechTalk.SpecRun.FeatureInitialize()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "CalSpecFeature2", "Add two numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "CalSpecFeature", "Add two numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -61,7 +61,7 @@ namespace CalculatorTest2
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void HereWeDoAdditionOfNumbers(string x, string y, string result, string[] exampleTags)
+        public virtual void AdditionOfNumbers(string x, string y, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "SmokeTest"};
@@ -69,50 +69,50 @@ namespace CalculatorTest2
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Here we do addition of Numbers", @__tags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Addition of Numbers", @__tags);
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line 6
-testRunner.Given(string.Format("We have entered {0} into the calculator", x), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given(string.Format("I have entered {0} into the calculator", x), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 7
-testRunner.And(string.Format("We also have entered {0} into the calculator", y), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And(string.Format("Also have entered {0} into the calculator", y), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 8
-testRunner.When("We perform add operation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.When("I press add", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 9
-testRunner.Then(string.Format("Output of adding {0} and {1} should be {2} on the screen", x, y, result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.Then(string.Format("the result of adding {0} and {1} should be {2} on the screen", x, y, result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Here we do addition of Numbers, addition, 1", new string[] {
+        [TechTalk.SpecRun.ScenarioAttribute("Addition of Numbers, addition, 1", new string[] {
                 "SmokeTest"}, SourceLine=12)]
-        public virtual void HereWeDoAdditionOfNumbers_Addition_1()
+        public virtual void AdditionOfNumbers_Addition_1()
         {
-            this.HereWeDoAdditionOfNumbers("1", "2", "3", ((string[])(null)));
+            this.AdditionOfNumbers("1", "2", "3", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Here we do addition of Numbers, addition, 2", new string[] {
+        [TechTalk.SpecRun.ScenarioAttribute("Addition of Numbers, addition, 2", new string[] {
                 "SmokeTest"}, SourceLine=12)]
-        public virtual void HereWeDoAdditionOfNumbers_Addition_2()
+        public virtual void AdditionOfNumbers_Addition_2()
         {
-            this.HereWeDoAdditionOfNumbers("2", "2", "4", ((string[])(null)));
+            this.AdditionOfNumbers("2", "2", "4", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Here we do addition of Numbers, addition, 5", new string[] {
+        [TechTalk.SpecRun.ScenarioAttribute("Addition of Numbers, addition, 5", new string[] {
                 "SmokeTest"}, SourceLine=12)]
-        public virtual void HereWeDoAdditionOfNumbers_Addition_5()
+        public virtual void AdditionOfNumbers_Addition_5()
         {
-            this.HereWeDoAdditionOfNumbers("5", "4", "9", ((string[])(null)));
+            this.AdditionOfNumbers("5", "4", "9", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Here we do addition of Numbers, addition, 100", new string[] {
+        [TechTalk.SpecRun.ScenarioAttribute("Addition of Numbers, addition, 100", new string[] {
                 "SmokeTest"}, SourceLine=12)]
-        public virtual void HereWeDoAdditionOfNumbers_Addition_100()
+        public virtual void AdditionOfNumbers_Addition_100()
         {
-            this.HereWeDoAdditionOfNumbers("100", "200", "300", ((string[])(null)));
+            this.AdditionOfNumbers("100", "200", "300", ((string[])(null)));
 #line hidden
         }
         
