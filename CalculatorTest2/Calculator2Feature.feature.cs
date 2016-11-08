@@ -104,7 +104,7 @@ testRunner.Then(string.Format("the result of adding {0} and {1} should be {2} on
                 "SmokeTest"}, SourceLine=12)]
         public virtual void AdditionOfNumbers_Addition_5()
         {
-            this.AdditionOfNumbers("5", "4", "10", ((string[])(null)));
+            this.AdditionOfNumbers("5", "4", "9", ((string[])(null)));
 #line hidden
         }
         
