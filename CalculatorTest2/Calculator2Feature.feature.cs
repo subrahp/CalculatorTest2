@@ -17,8 +17,7 @@ namespace CalculatorTest2
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("CalSpecFeature")]
+    [TechTalk.SpecRun.FeatureAttribute("CalSpecFeature", Description="Add two numbers", SourceFile="Calculator2Feature.feature", SourceLine=0)]
     public partial class CalSpecFeatureFeature
     {
         
@@ -27,7 +26,7 @@ namespace CalculatorTest2
 #line 1 "Calculator2Feature.feature"
 #line hidden
         
-        [NUnit.Framework.TestFixtureSetUpAttribute()]
+        [TechTalk.SpecRun.FeatureInitialize()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
@@ -35,19 +34,18 @@ namespace CalculatorTest2
             testRunner.OnFeatureStart(featureInfo);
         }
         
-        [NUnit.Framework.TestFixtureTearDownAttribute()]
+        [TechTalk.SpecRun.FeatureCleanup()]
         public virtual void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
             testRunner = null;
         }
         
-        [NUnit.Framework.SetUpAttribute()]
         public virtual void TestInitialize()
         {
         }
         
-        [NUnit.Framework.TearDownAttribute()]
+        [TechTalk.SpecRun.ScenarioCleanup()]
         public virtual void ScenarioTearDown()
         {
             testRunner.OnScenarioEnd();
@@ -63,13 +61,6 @@ namespace CalculatorTest2
             testRunner.CollectScenarioErrors();
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Addition of Numbers")]
-        [NUnit.Framework.CategoryAttribute("SmokeTest")]
-        [NUnit.Framework.TestCaseAttribute("1", "2", "3", new string[0])]
-        [NUnit.Framework.TestCaseAttribute("2", "2", "4", new string[0])]
-        [NUnit.Framework.TestCaseAttribute("5", "4", "9", new string[0])]
-        [NUnit.Framework.TestCaseAttribute("100", "200", "300", new string[0])]
         public virtual void AdditionOfNumbers(string x, string y, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -91,6 +82,44 @@ testRunner.When("I press add", ((string)(null)), ((TechTalk.SpecFlow.Table)(null
 testRunner.Then(string.Format("the result of adding {0} and {1} should be {2} on the screen", x, y, result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Addition of Numbers, addition, 1", new string[] {
+                "SmokeTest"}, SourceLine=12)]
+        public virtual void AdditionOfNumbers_Addition_1()
+        {
+            this.AdditionOfNumbers("1", "2", "3", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Addition of Numbers, addition, 2", new string[] {
+                "SmokeTest"}, SourceLine=12)]
+        public virtual void AdditionOfNumbers_Addition_2()
+        {
+            this.AdditionOfNumbers("2", "2", "4", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Addition of Numbers, addition, 5", new string[] {
+                "SmokeTest"}, SourceLine=12)]
+        public virtual void AdditionOfNumbers_Addition_5()
+        {
+            this.AdditionOfNumbers("5", "4", "9", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Addition of Numbers, addition, 100", new string[] {
+                "SmokeTest"}, SourceLine=12)]
+        public virtual void AdditionOfNumbers_Addition_100()
+        {
+            this.AdditionOfNumbers("100", "200", "300", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.TestRunCleanup()]
+        public virtual void TestRunCleanup()
+        {
+            TechTalk.SpecFlow.TestRunnerManager.GetTestRunner().OnTestRunEnd();
         }
     }
 }
