@@ -71,17 +71,27 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="CalcSecondFeature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalcSecondFeature.feature</DependentUpon>
+    </Compile>
     <Compile Include="Calculator2Feature.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Calculator2Feature.feature</DependentUpon>
     </Compile>
+    <Compile Include="CalSpecFeature2Steps.cs" />
     <Compile Include="CalSpecFeatureSteps.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="CalcSecondFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CalcSecondFeature.feature.cs</LastGenOutput>
+    </None>
     <None Include="Calculator2Feature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Calculator2Feature.feature.cs</LastGenOutput>
