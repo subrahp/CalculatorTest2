@@ -1,5 +1,5 @@
 ﻿Feature: CalSpecFeature
-Add two numbers
+Adding the given two numbers
 
 @SmokeTest
 Scenario Outline: Addition of Numbers
@@ -8,7 +8,7 @@ And Also have entered <y> into the calculator
 When I press add
 Then the result of adding <x> and <y> should be <result> on the screen
 
-Scenarios: addition
+Scenarios: addition 
 | x | y | result|
 | 1 | 2 | 3|
 | 2 | 2 | 4|
